@@ -11,6 +11,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  margin-right: 30px;
 }
 
 .contact__mail:hover,
@@ -21,7 +22,7 @@
 .menu__icone {
   margin-right: 10px;
   fill: var(--text-color);
-  margin-left: 30px;
+  // margin-left: 30px;
 }
 
 .menu__icone:hover {
