@@ -1,3 +1,9 @@
+
+
+.contact__item:not(:last-child){
+  margin-right: 30;
+}
+
 .contact__mail:hover .menu__icone,
 .contact__mail:focus .menu__icone {
   fill: var(--accent-color);
@@ -11,7 +17,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  margin-right: 30px;
+  // margin-right: 30px;
 }
 
 .contact__mail:hover,
