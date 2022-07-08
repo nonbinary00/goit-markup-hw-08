@@ -981,6 +981,11 @@ img {
   border-radius: 4px;
 }
 
+.categories__button--active {
+  background-color: var(--accent-color);
+  color: var(--primary-background-color);
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
