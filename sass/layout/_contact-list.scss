@@ -1,0 +1,17 @@
+.contact-list__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+ 
+ .contact-list__item:not(:last-child) {
+   margin-bottom: 9px;
+ }
+ 
+ .contact-list__link {
+   color: var(--primary-background-color);
+ }
+ 
+ .contact-list__link:hover,
+ .contact-list__link:focus {
+   color: var(--accent-color);
+ }
+ 

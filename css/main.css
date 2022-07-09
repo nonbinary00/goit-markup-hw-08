@@ -129,11 +129,11 @@ img {
   margin-right: 50px;
 }
 
-.menu__link.current {
+.menu__link--current {
   color: var(--accent-color);
 }
 
-.menu__link.current::after {
+.menu__link--current::after {
   position: absolute;
   display: inline-block;
   content: "";
@@ -444,6 +444,10 @@ img {
   background-color: var(--portfolio-color-button);
 }
 
+.our-team__item {
+  background: var(--primary-background-color);
+}
+
 .social-list {
   display: flex;
   justify-content: center;
@@ -482,10 +486,6 @@ img {
 
 .social-list__icon {
   fill: var(--social-icon-color);
-}
-
-.our-team__item {
-  background: var(--primary-background-color);
 }
 
 .our-clients__item {
@@ -560,23 +560,6 @@ img {
   margin-top: 20px;
 }
 
-.contact-list__item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.contact-list__item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.contact-list__link {
-  color: var(--primary-background-color);
-}
-
-.contact-list__link:hover,
-.contact-list__link:focus {
-  color: var(--accent-color);
-}
-
 /*MAIL FOOTER*/
 .footer__contact-list {
   display: flex;
@@ -596,6 +579,10 @@ img {
 .footer__mail:hover,
 .footer__mail:focus {
   color: var(--accent-color);
+}
+
+.footer {
+  background: var(--hero-background);
 }
 
 .footer-social {
@@ -723,8 +710,21 @@ img {
   margin-right: 10px;
 }
 
-.footer {
-  background: var(--hero-background);
+.contact-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contact-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contact-list__link {
+  color: var(--primary-background-color);
+}
+
+.contact-list__link:hover,
+.contact-list__link:focus {
+  color: var(--accent-color);
 }
 
 .backdrop.is-hidden {

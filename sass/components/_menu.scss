@@ -25,11 +25,11 @@
     margin-right: 50px;
   }
   
-  .menu__link.current {
+  .menu__link--current {
     color: var(--accent-color);
   }
   
-  .menu__link.current::after {
+  .menu__link--current::after {
     position: absolute;
     display: inline-block;
     content: '';
