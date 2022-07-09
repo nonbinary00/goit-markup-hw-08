@@ -13,9 +13,10 @@
   }
   
   .footer-social__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      @include flexCenter (flex, center, center);
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
   }
   
   .footer-social__item:not(:last-child) {
@@ -23,9 +24,10 @@
   }
   
   .footer-social__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    @include flexCenter (flex, center, center);
     width: 44px;
     height: 44px;
     border-radius: 50%;
