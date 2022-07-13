@@ -5,7 +5,7 @@
     letter-spacing: $ls;
 }
 
-@mixin flexCenter($type:flex, $main-axis:center, $cross-axis:center){
+@mixin flexCenter($type, $main-axis, $cross-axis){
     display: $type;
     justify-content: $main-axis;
     align-items: $cross-axis;} 
