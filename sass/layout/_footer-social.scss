@@ -13,7 +13,7 @@
   }
   
   .footer-social__list {
-      @include flexCenter (flex, center, center);
+      @include flexCenter(flex, center, center);
     // display: flex;
     // justify-content: center;
     // align-items: center;
