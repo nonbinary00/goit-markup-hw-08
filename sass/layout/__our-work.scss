@@ -1,3 +1,10 @@
+
+.work{
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
 .our-work {
     padding-top: 0;
     &__text {
