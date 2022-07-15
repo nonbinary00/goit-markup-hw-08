@@ -48,6 +48,7 @@ ol {
 
 img {
   display: block;
+  width: 100%;
 }
 
 .list {
@@ -284,10 +285,19 @@ img {
 }
 
 .hero {
-  background-color: var(--hero-background);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 0;
+  background: var(--background-color);
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images2/hero/img-hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images2/hero/img-hero-mobile@2x.jpg);
+  }
 }
 .hero__titel {
   width: 696px;
@@ -320,17 +330,8 @@ img {
   background-color: #188ce8;
 }
 
-.overlay {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg_studio.jpeg);
-  width: 1600px;
-  /* left: 0px;
-      top: 80px; */
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
+/* left: 0px;
+    top: 80px; */
 .specialization__list {
   display: flex;
   flex-wrap: wrap;
@@ -454,6 +455,7 @@ img {
   .our-team__item {
     flex-basis: calc(50% - 30px);
     margin-left: 30px;
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -528,7 +530,21 @@ img {
 }
 
 .our-clients__item {
-  flex-basis: calc((100% - 150px) / 6);
+  margin-bottom: 30px;
+  margin-left: 30px;
+  flex-basis: calc(50% - 30px);
+}
+@media screen and (min-width: 768px) {
+  .our-clients__item {
+    flex-basis: calc(33.3333333333% - 30px);
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-clients__item {
+    flex-basis: calc(16.6666666667% - 30px);
+    margin-left: 30px;
+  }
 }
 
 .our-clients__icon {
@@ -538,6 +554,9 @@ img {
 
 .our-clients__list {
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-left: -30px;
 }
 
 .our-clients__link {
@@ -548,10 +567,6 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.our-clients__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .our-clients__link:hover,
