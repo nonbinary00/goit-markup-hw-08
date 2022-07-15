@@ -300,15 +300,25 @@ img {
   }
 }
 .hero__titel {
-  width: 696px;
+  padding: 0;
+  max-width: 360px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
+  font-size: 26px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-background-color);
   margin: auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero__titel {
+    max-width: 696px;
+    margin: auto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636363636;
+    letter-spacing: 0.06em;
+  }
 }
 .hero__button {
   min-width: 200px;
