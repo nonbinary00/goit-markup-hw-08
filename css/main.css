@@ -680,11 +680,6 @@ img {
 .footer__contact-list {
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .footer__contact-list {
-    margin-right: 165px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer__contact-list {
     margin-right: 70px;
