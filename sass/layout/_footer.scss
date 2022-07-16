@@ -3,17 +3,44 @@
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
+    text-align: center;
+    background: var(--hero-background);
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 0;
+    }
+
   }
   
   .container-footer {
-    display: flex;
-    align-items: baseline;
+    margin: auto;
+	justify-content: space-around;
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: baseline;
+	}
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		align-items: baseline;
+	}
   }
   
+  
   .navigation-footer {
-    display: flex;
-    align-items: baseline;
-    flex-direction: column;
+     text-align: center;
+     margin-bottom: 60px;
+     @media screen and (min-width: 768px) {
+      // margin-right: 165px;
+      justify-content: start;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+      text-align: left;
+    }
+    // display: flex;
+    // align-items: baseline;
+    // flex-direction: column;
   }
   
   .logo-footer {
@@ -22,8 +49,8 @@
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-  
     color: var(--accent-color);
+
   }
   
   .address {
@@ -35,40 +62,21 @@
     margin-top: 20px;
   }
   
-//   .contact-list {
-//     display: flex;
-//     padding: 0;
-//     margin-left: auto;
-//   }
-  
-//   .contact-list-footer-item:not(:last-child) {
-//     margin-bottom: 9px;
-//   }
-  
-  // .contact-list__item:not(:last-child) {
-  //    margin-bottom: 9px;
-  //  }
-  
-  // .contact-list__item:not(:last-child) {
-  //   margin-bottom: 9px;
-  // }
-  
-  // .contact-list__link {
-  //   color: var(--primary-background-color);
-  // }
-  
-  // .contact-list__link:hover,
-  // .contact-list__link:focus {
-  //   color: var(--accent-color);
-  // }
-  
-  /*MAIL FOOTER*/
-  
   .footer__contact-list {
-    display: flex;
-    padding: 0;
-    margin-left: auto;
-    flex-direction: column;
+    text-align: center;
+
+	@media screen and (min-width: 768px) {
+		margin-right: 165px;
+		// margin-right: 50px;
+	}
+	@media screen and (min-width: 1200px) {
+		margin-right: 70px;
+		text-align: left;
+	}
+    // display: flex;
+    // padding: 0;
+    // margin-left: auto;
+    // flex-direction: column;
   }
   
   .footer__mail,
@@ -84,151 +92,4 @@
     color: var(--accent-color);
   }
   
-  // .footer-social {
-  //   margin-left: 70px;
-  // }
   
-  // .footer-social__text {
-  //   font-size: 14px;
-  //   line-height: 1.14;
-  //   letter-spacing: 0.03em;
-  //   text-transform: uppercase;
-  //   color: var(--primary-background-color);
-  //   margin-bottom: 20px;
-  //   font-weight: 700;
-  // }
-  
-  // .footer-social__list {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
-  
-  // .footer-social__item:not(:last-child) {
-  //   margin-right: 10px;
-  // }
-  
-  // .footer-social__link {
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   width: 44px;
-  //   height: 44px;
-  //   border-radius: 50%;
-  //   background-color: rgba(255, 255, 255, 0.1);
-  //   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  // }
-  
-  // .footer-social__link:hover,
-  // .footer-social__link:focus {
-  //   background-color: var(--accent-color);
-  // }
-  
-  // .footer-social__icon {
-  //   fill: var(--primary-background-color);
-  // }
-
-//   .backdrop.is-hidden {
-//     opacity: 0;
-//     visibility: hidden;
-//     pointer-events: none;
-//   }
-  
-//   .backdrop {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     /* position: relative;  */
-//     background-color: rgba(0, 0, 0, 0.2);
-//     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
-
-
-// .subscribe__text {
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     color: var(--primary-background-color);
-//     margin-bottom: 20px;
-//   }
-  
-//   .subscribe {
-//     margin-left: 93px;
-//     /* margin-right: 215px; */
-//   }
-  
-//   .subscribe__mail {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//   }
-  
-//   .subscribe__input {
-//     width: 358px;
-//     height: 50px;
-//     margin-right: 12px;
-//     border: 1px solid rgba(255, 255, 255, 0.3);
-//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-//     border-radius: 4px;
-//     background-color: transparent;
-//     padding: 15px 16px;
-//     cursor: pointer;
-//     color: var(--primary-background-color);
-//     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
-  
-//   .subscribe__input::placeholder {
-//     font-weight: 400;
-//     font-size: 16px;
-//     line-height: 1.25;
-//     letter-spacing: 0.03em;
-  
-//     color: rgba(255, 255, 255, 0.6);
-//     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
-  
-//   .subscribe__input:hover,
-//   .subscribe__input:focus {
-//     border: 1px solid var(--accent-color);
-//     outline: none;
-//   }
-  
-//   .subscribe__button {
-//     width: 200px;
-//     height: 50px;
-//     display: flex;
-//     align-items: center;
-//     text-align: center;
-//     padding: 10px 28px;
-//     background-color: var(--accent-color);
-//     color: var(--primary-background-color);
-//     background: var(--accent-color);
-//     border-color: transparent;
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//     border-radius: 4px;
-//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   }
-  
-//   .subscribe__button:hover,
-//   .subscribe__button:focus {
-//     background-color: #188ce8;
-//     border-color: transparent;
-//   }
-  
-//   .subscribe__button_text {
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 1.88;
-//     letter-spacing: 0.06em;
-//     color: var(--primary-background-color);
-//     margin-right: 10px;
-//   }
-
-  .footer {
-    background: var(--hero-background);
-  }

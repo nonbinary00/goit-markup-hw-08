@@ -1,10 +1,11 @@
 .contact-list__item:not(:last-child) {
     margin-bottom: 9px;
+    @media screen and (min-width: 1200px){
+      margin-bottom: 9px;
+  }
   }
  
- .contact-list__item:not(:last-child) {
-   margin-bottom: 9px;
- }
+
  
  .contact-list__link {
    color: var(--primary-background-color);
