@@ -1,19 +1,37 @@
 .categories__list {
+    // display: flex;
+    // justify-content: center;
+    // margin-bottom: 50px;
     display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-bottom: 40px;
+  gap: 15px 8px;
+  @media screen and (min-width: 768px) {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
+}
   
-  .categories__item:not(:last-child) {
-    margin-right: 8px;
-  }
+  
+  // .categories__item:not(:last-child) {
+  //   margin-right: 8px;
+  // }
   
   .categories__item {
-    text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: center;
+    }
   }
+    // text-align: center;
+  
   
   .categories__button {
     padding: 6px 22px;
+
   }
   
   .categories__button {
