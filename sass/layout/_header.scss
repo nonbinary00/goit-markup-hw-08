@@ -16,10 +16,18 @@
     
   }
   .header__container {
-    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @media screen and (min-width: 768px) {
+      height: 80px;
     justify-content: center;
     padding-top: 21px;
     padding-bottom: 21px;
+    }
+    
   }
   
   .navigations {
