@@ -1043,8 +1043,8 @@ img {
 
 .modal-policy__lable {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -1054,8 +1054,8 @@ img {
   width: 16px;
   height: 15px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-right: 7px;
 }
 

@@ -1,18 +1,25 @@
 .header {
-    
+    width: 100%;
     background: var(--primary-background-color);
     border-bottom: 1px solid #ececec;
     &__container {
-      display: flex;
-      align-items: center;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
       /* padding-top: 24px;
       padding-bottom: 25px; */
     }
     
   }
-  
-  .header {
-    background: var(--primary-background-color);
+  .header__container {
+    height: 80px;
+    justify-content: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
   
   .navigations {

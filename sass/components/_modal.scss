@@ -160,9 +160,7 @@
   }
   
   .modal-policy__lable {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexCenter (flex, center, center);
     cursor: pointer;
     
   }
@@ -172,9 +170,7 @@
     border-radius: 3px;
     width: 16px;
     height: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexCenter (flex, center, center);
     margin-right: 7px;
   }
   
