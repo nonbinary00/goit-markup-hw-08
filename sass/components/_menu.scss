@@ -9,14 +9,31 @@
 .contact {
   display: none;
   @media screen and (min-width: 768px) {
-  display: flex;
-  padding: 0;
-  margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-left: 84px;
+    @media screen and (min-width: 1200px){
+      display: flex;
+    padding: 0;
+    margin-left: auto;
+    flex-direction: row;
+    align-items: center;
+    }
+  // display: flex;
+  // padding: 0;
+  // margin-left: auto;
 }
 }
 
 .contact__item:not(:last-child) {
   margin-right: 50px;
+  @media screen and (min-width: 768px){
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px){
+    margin-bottom: 0;
+  }
 }
 
 .menu__item {
@@ -87,3 +104,4 @@
   margin-right: 10px;
   fill: var(--text-color);
 }
+
