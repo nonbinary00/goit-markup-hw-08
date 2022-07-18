@@ -134,9 +134,16 @@ img {
   position: absolute;
   top: 10px;
   right: 15px;
+  border: none;
+  background-color: var(--primary-background-color);
 }
 
-.menu-open .men-close {
+.menu-open {
+  border: none;
+  background: var(--primary-background-color);
+}
+
+.menu-open .menu-close {
   padding-top: 10px;
   padding-bottom: 10px;
   width: 40px;
@@ -148,7 +155,7 @@ img {
   background-color: var(--primary-background-color);
 }
 @media screen and (min-width: 768px) {
-  .menu-open .men-close {
+  .menu-open .menu-close {
     display: none;
   }
 }
