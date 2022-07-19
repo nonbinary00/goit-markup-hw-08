@@ -26,9 +26,11 @@
   }
 }
 
-.body {
-  no-scroll{overflow:hidden} ; 
-}
+
+  .no-scroll{
+    overflow:hidden ; 
+  }
+  
 
 .menu-open__icon {
    fill:rgba(0, 0, 0, 1);
