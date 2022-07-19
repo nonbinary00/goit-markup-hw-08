@@ -3,6 +3,7 @@
 		openMenuBtn: document.querySelector(".menu-open"),
 		closeMenuBtn: document.querySelector(".menu-close"),
 		menu: document.querySelector(".mob-menu"),
+		const: bodyNoScroll = document.querySelector(".body"),
 	};
 
 	refs.openMenuBtn.addEventListener("click", toggleMenu);
@@ -10,6 +11,7 @@
 
 	function toggleMenu() {
 		refs.menu.classList.toggle("is-open");
+        bodyNoScroll.classList.toggle("no-scroll")
 	}
 })();
 

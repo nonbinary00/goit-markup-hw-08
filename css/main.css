@@ -160,6 +160,10 @@ img {
   }
 }
 
+.body no-scroll {
+  overflow: hidden;
+}
+
 .menu-open__icon {
   fill: rgb(0, 0, 0);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -605,9 +609,6 @@ img {
   color: var(--text-color);
 }
 
-.specialization__item {
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 768px) {
   .specialization__item {
     flex-basis: calc(50% - 30px);
@@ -969,9 +970,9 @@ img {
   }
 }
 
-.subscribe {
-  /* margin-right: 215px; */
-}
+/* .subscribe {
+  margin-right: 215px;
+} */
 @media screen and (min-width: 1200px) {
   .subscribe {
     margin-top: 0;
