@@ -516,13 +516,13 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../sass/images2/hero/img-hero-tablet@2x.jpg");
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
   .hero {
     padding: 200px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../sass/images2/hero/img-hero-desktop.jpg");
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (max-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (max-width: 1600px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../sass/images2/hero/img-hero-desktop@2x.jpg");
   }
@@ -571,8 +571,13 @@ img {
 /* left: 0px;
     top: 80px; */
 .specialization__list {
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: -30px;
+}
+@media screen and (min-width: 768px) {
+  .specialization__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .specialization__link {
@@ -609,10 +614,13 @@ img {
   color: var(--text-color);
 }
 
+.specialization__item {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 768px) {
   .specialization__item {
     flex-basis: calc(50% - 30px);
-    margin-right: 30px;
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -823,7 +831,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    padding-bottom: 0;
+    padding-bottom: 60px;
   }
 }
 
@@ -847,7 +855,6 @@ img {
 
 .navigation-footer {
   text-align: center;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .navigation-footer {
@@ -884,7 +891,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__contact-list {
-    margin-right: 70px;
     text-align: left;
   }
 }
@@ -908,7 +914,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer-social {
-    margin-right: 93px;
     text-align: left;
   }
 }
@@ -970,13 +975,13 @@ img {
   }
 }
 
-/* .subscribe {
-  margin-right: 215px;
-} */
+.subscribe {
+  /* margin-right: 215px; */
+}
 @media screen and (min-width: 1200px) {
   .subscribe {
     margin-top: 0;
-    margin-left: 93px;
+    margin-left: auto;
   }
 }
 
