@@ -126,13 +126,15 @@
 
 .mob-soc {
 	display: flex;
+  flex-wrap: wrap;
     // align-items: center;
     // justify-content: start;
     // margin-top: 64px;
 }
 
-.mob-soc__item:not(:first-child) {
-	margin-left: 10px;
+.mob-soc__item:not(:last-child) {
+	margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .mob-soc__item:not(:last-child)::after {
