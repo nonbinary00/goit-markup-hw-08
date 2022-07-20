@@ -3,6 +3,7 @@
     @media screen and (min-width: 768px) {
     display: flex;
     padding: 0;
+    margin-right: 84px;
   }
   @media screen and (min-width: 1200px){
     margin-left: 93px;
@@ -18,7 +19,7 @@
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin-left: 84px;
+    margin-left: auto;
     @media screen and (min-width: 1200px){
       display: flex;
     padding: 0;
@@ -33,12 +34,13 @@
 }
 
 .contact__item:not(:last-child) {
-  margin-right: 50px;
+  // margin-right: 50px;
   @media screen and (min-width: 768px){
     margin-bottom: 10px;
   }
   @media screen and (min-width: 1200px){
     margin-bottom: 0;
+    margin-right: 50px;
   }
 }
 

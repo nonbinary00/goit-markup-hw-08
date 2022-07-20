@@ -297,6 +297,7 @@ img {
   .menu {
     display: flex;
     padding: 0;
+    margin-right: 84px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -313,7 +314,7 @@ img {
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin-left: 84px;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
@@ -326,9 +327,6 @@ img {
   }
 }
 
-.contact__item:not(:last-child) {
-  margin-right: 50px;
-}
 @media screen and (min-width: 768px) {
   .contact__item:not(:last-child) {
     margin-bottom: 10px;
@@ -337,6 +335,7 @@ img {
 @media screen and (min-width: 1200px) {
   .contact__item:not(:last-child) {
     margin-bottom: 0;
+    margin-right: 50px;
   }
 }
 
@@ -579,8 +578,7 @@ img {
   .specialization__list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30;
-    margin-right: 30px;
+    margin-left: -30px;
   }
 }
 
