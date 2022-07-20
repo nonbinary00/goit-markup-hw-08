@@ -492,6 +492,7 @@ img {
 }
 
 .hero {
+  max-width: 1600px;
   text-align: center;
   padding: 118px 0;
   background: var(--background-color);
@@ -517,13 +518,13 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../sass/images2/hero/img-hero-tablet@2x.jpg");
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../sass/images2/hero/img-hero-desktop.jpg");
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (max-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (max-width: 1600px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../sass/images2/hero/img-hero-desktop@2x.jpg");
   }
